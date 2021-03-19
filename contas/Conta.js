@@ -1,16 +1,16 @@
-import { Cliente } from './Cliente.js'
+import { Cliente } from '../Cliente.js'
 
-export default class ContaPoupanca {
-	static numeroContas = 0
+export default class Conta {
+	static numerocontas = 0
 	#agencia
-	#saldo = 0
+	#saldo
 	#cliente
 
-	constructor(saldo, agencia, cliente) {
+	constructor(agencia, cliente) {
 		this.#agencia = agencia
-		this.#saldo = saldo
+		this.#saldo = 0
 		this.#cliente = cliente
-		ContaPoupanca.numerocontas++
+		Conta.numerocontas++
 
 	}
 
