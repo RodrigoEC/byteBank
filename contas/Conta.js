@@ -39,10 +39,14 @@ export default class Conta {
 	}
 
 	sacar(valor) {
-		if (this.#saldo < valor) return
+		this._sacar(valor, 1)
+	}
+	
+	_sacar(valor, taxa) {
+		const valorSacado = taxa * valor
 
-		this.#saldo -= valor
-		return valor
+		if (this.saldo < valorSacado) return
+		this.saldo -= valorSacado
 	}
 
 	transferir(valor, conta) {
