@@ -6,7 +6,7 @@ export class Cliente {
 	constructor(nome, cpf) {
 		this.#nome = nome
 		this.#cpf = cpf
-		Conta.numeroClientes++
+		Cliente.numeroClientes++
 	}
 
 	get cpf() {
