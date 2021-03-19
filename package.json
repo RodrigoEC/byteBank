@@ -1,0 +1,13 @@
+{
+  "name": "bytebank",
+  "version": "1.0.0",
+  "description": "Projeto ByteBank para clientes",
+  "main": "index.js",
+  "scripts": {
+    "start": "node --experimental-modules index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rodrigo Eloy",
+  "license": "ISC",
+  "type": "module"
+}
