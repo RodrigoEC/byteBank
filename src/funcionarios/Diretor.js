@@ -1,8 +1,8 @@
-import Funcionario from './Funcionario.js'
+import Funcionario from './Funcionario.js';
 
-export default class Diretor extends Funcionario{
-	constructor(nome, salario, cpf) {
-		super(nome, salario, cpf)
-		this.bonificacao = 2
-	}
+export default class Diretor extends Funcionario {
+  constructor(nome, salario, cpf) {
+    super(nome, salario, cpf);
+    this.bonificacao = 2;
+  }
 }
